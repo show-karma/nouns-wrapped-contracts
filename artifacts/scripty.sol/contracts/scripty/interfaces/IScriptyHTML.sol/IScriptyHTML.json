@@ -1,0 +1,431 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IScriptyHTML",
+  "sourceName": "scripty.sol/contracts/scripty/interfaces/IScriptyHTML.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "contractAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "contractData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "enum HTMLTagType",
+                  "name": "tagType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagOpen",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagClose",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagContent",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct HTMLTag[]",
+              "name": "headTags",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "contractAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "contractData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "enum HTMLTagType",
+                  "name": "tagType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagOpen",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagClose",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagContent",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct HTMLTag[]",
+              "name": "bodyTags",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct HTMLRequest",
+          "name": "htmlRequest",
+          "type": "tuple"
+        }
+      ],
+      "name": "getEncodedHTML",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "contractAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "contractData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "enum HTMLTagType",
+                  "name": "tagType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagOpen",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagClose",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagContent",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct HTMLTag[]",
+              "name": "headTags",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "contractAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "contractData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "enum HTMLTagType",
+                  "name": "tagType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagOpen",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagClose",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagContent",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct HTMLTag[]",
+              "name": "bodyTags",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct HTMLRequest",
+          "name": "htmlRequest",
+          "type": "tuple"
+        }
+      ],
+      "name": "getEncodedHTMLString",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "contractAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "contractData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "enum HTMLTagType",
+                  "name": "tagType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagOpen",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagClose",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagContent",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct HTMLTag[]",
+              "name": "headTags",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "contractAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "contractData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "enum HTMLTagType",
+                  "name": "tagType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagOpen",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagClose",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagContent",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct HTMLTag[]",
+              "name": "bodyTags",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct HTMLRequest",
+          "name": "htmlRequest",
+          "type": "tuple"
+        }
+      ],
+      "name": "getHTML",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "contractAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "contractData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "enum HTMLTagType",
+                  "name": "tagType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagOpen",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagClose",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagContent",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct HTMLTag[]",
+              "name": "headTags",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "address",
+                  "name": "contractAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "contractData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "enum HTMLTagType",
+                  "name": "tagType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagOpen",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagClose",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "tagContent",
+                  "type": "bytes"
+                }
+              ],
+              "internalType": "struct HTMLTag[]",
+              "name": "bodyTags",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct HTMLRequest",
+          "name": "htmlRequest",
+          "type": "tuple"
+        }
+      ],
+      "name": "getHTMLString",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

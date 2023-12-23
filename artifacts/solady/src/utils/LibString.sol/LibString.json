@@ -1,0 +1,21 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "LibString",
+  "sourceName": "solady/src/utils/LibString.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "HexLengthInsufficient",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TooBigForSmallString",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60556032600b8282823980515f1a607314602657634e487b7160e01b5f525f60045260245ffd5b305f52607381538281f3fe730000000000000000000000000000000000000000301460806040525f80fdfea26469706673582212209f3a1373f8216fc9c357c5f5d9f244956a6649c3022c0c235b30d05362ee73a864736f6c63430008150033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040525f80fdfea26469706673582212209f3a1373f8216fc9c357c5f5d9f244956a6649c3022c0c235b30d05362ee73a864736f6c63430008150033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
