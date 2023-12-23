@@ -14,6 +14,7 @@ import {LibDataURI} from "./LibDataURI.sol";
 
 contract Renderer is ScriptyHTML {
     using LibString for uint256;
+    
 
     function htmlRequest(
         uint32 seed,
@@ -84,12 +85,12 @@ contract Renderer is ScriptyHTML {
         (HTMLTag[] memory headTags, HTMLTag[] memory bodyTags) =
             htmlRequest(seed, props, sponsoredProps, votes, username);
         headTags[1].tagContent =
-            "<style>body{font-family:Poppins,sans-serif;margin:0;padding:0;display:flex;justify-content:center;align-items:center}#c{position:relative}#w{position:absolute;display:flex;flex-direction:column;height:100%;color:#fff;font-weight:400}.t{font-size:28px}.l{font-size:28px}.s,.u{font-size:112px;font-weight:800;font-family:Montserrat,sans-serif}.u{font-size:56px;overflow:hidden;font-family:Montserrat,sans-serif}.g{flex-grow:1}#a{margin-top:1.5rem;margin-left:1.5rem}#z{margin-bottom:1.5rem;margin-left:1.5rem}#m{margin-bottom:calc(1rem - 8px)}.p{width: 700px; height: 700px; background-color:";
+            "<style>body{font-family:Poppins,sans-serif;margin:0;padding:0;display:flex;justify-content:center;align-items:center}#c{position:relative}#w{position:absolute;display:flex;flex-direction:column;height:100%;color:#fff;font-weight:400}.t{font-size:28px}.l{font-size:24px;margin-top:10px}.s,.u{font-size:80px;font-weight:800;font-family:Montserrat,sans-serif}.u{font-size:56px;overflow:hidden;font-family:Montserrat,sans-serif}.g{flex-grow:1}#a{margin-top:1.5rem;margin-left:1.5rem}#z{margin-bottom:1.5rem;margin-left:1.5rem}#m{margin-bottom:calc(1rem - 8px)}.p{width: 700px; height: 700px; background-color:";
         headTags[2].tagContent = _color(seed);
         headTags[3].tagContent = "}</style>";
         headTags[4].tagContent = "<style></style>";
         assembly {
-            mstore(bodyTags, 11)
+            mstore(bodyTags, 13)
         }
         HTMLRequest memory html =
             HTMLRequest({headTags: headTags, bodyTags: bodyTags});
@@ -120,7 +121,7 @@ contract Renderer is ScriptyHTML {
     function tokenJSON(
         uint32 seed,
         uint256 uid,
-       uint16 props,
+        uint16 props,
         uint16 sponsoredProps,
         uint24 votes,
         string memory username

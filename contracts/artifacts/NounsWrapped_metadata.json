@@ -371,20 +371,25 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "fid",
+						"name": "uid",
 						"type": "uint256"
 					},
 					{
 						"components": [
 							{
-								"internalType": "uint24",
-								"name": "mins",
-								"type": "uint24"
+								"internalType": "uint16",
+								"name": "props",
+								"type": "uint16"
 							},
 							{
 								"internalType": "uint16",
-								"name": "streak",
+								"name": "sponsoredProps",
 								"type": "uint16"
+							},
+							{
+								"internalType": "uint24",
+								"name": "votes",
+								"type": "uint24"
 							},
 							{
 								"internalType": "string",
@@ -561,7 +566,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "fid",
+						"name": "uid",
 						"type": "uint256"
 					}
 				],
@@ -598,21 +603,26 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "fid",
+						"name": "uid",
 						"type": "uint256"
 					}
 				],
 				"name": "statsOf",
 				"outputs": [
 					{
-						"internalType": "uint24",
-						"name": "mins",
-						"type": "uint24"
+						"internalType": "uint16",
+						"name": "props",
+						"type": "uint16"
 					},
 					{
 						"internalType": "uint16",
-						"name": "streak",
+						"name": "sponsoredProps",
 						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "votes",
+						"type": "uint24"
 					},
 					{
 						"internalType": "string",
@@ -659,7 +669,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "fid",
+						"name": "uid",
 						"type": "uint256"
 					}
 				],
@@ -869,7 +879,7 @@
 				},
 				"tokenURI(uint256)": {
 					"params": {
-						"fid": "Token/Nouns ID"
+						"uid": "Token/Nouns ID"
 					},
 					"returns": {
 						"_0": "Base64 encoded metadata data URI"
@@ -897,7 +907,7 @@
 				"contractURI()": {
 					"notice": "Read contract metadata"
 				},
-				"mint(address,uint256,(uint24,uint16,string))": {
+				"mint(address,uint256,(uint16,uint16,uint24,string))": {
 					"notice": "Mint a Nouns Wrapped token.         Caller must send mintFee wei as msg.value.         Caller must provide an EIP-712 `Mint` signature."
 				},
 				"mintFee()": {
@@ -907,10 +917,10 @@
 					"notice": "Read token name"
 				},
 				"seeds(uint256)": {
-					"notice": "Random seed by fid"
+					"notice": "Random seed by uid"
 				},
 				"statsOf(uint256)": {
-					"notice": "Read stats by fid"
+					"notice": "Read stats by uid"
 				},
 				"symbol()": {
 					"notice": "Read token symbol"
@@ -950,19 +960,19 @@
 			]
 		},
 		"contracts/NounsWrapped.sol": {
-			"keccak256": "0x1a145179480b7a7133548309eafe63f723bd295a2927aaa25f1c508e441a2997",
+			"keccak256": "0x35341434ec858fa992c1a50fe3743801fa538d80def4acccace67d7bd36e4a99",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a78b664ac7ce4171007ab994462b29250fd677b8db9ed59164d398db4229b278",
-				"dweb:/ipfs/QmdtxJ5g9wkPcoUVz1fbbk21fpiQv1KSh6wghEBUB6ko3i"
+				"bzz-raw://e52a3fa1e7d10d15a34f2932b16da02f217be80e734bc413a514fbee42f29649",
+				"dweb:/ipfs/QmS3KzMhRh5RVgSpp1y6bZgvhweyK1ba2qJKGQNdq1hQFy"
 			]
 		},
 		"contracts/Renderer.sol": {
-			"keccak256": "0x3f53da367e34f3f465a542eb45170d75cd54f2bf52747bdc0dcc87f4a8be4729",
+			"keccak256": "0xd4990619390e7c16ed8480ea0a946b32a801635f68dc793a5216bf35923f9f16",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://83621f54b63334487ff08fe020f23ef25953572e7c15070ce5fe3a3c65e871cb",
-				"dweb:/ipfs/QmPVfsxqZ4g9bXCwtTPrXN1r2okpNf1zXJb64KageZXmKW"
+				"bzz-raw://d68b665ab3984737883178f4e367229fb405fef41581aca49cc4aa3268cd01da",
+				"dweb:/ipfs/QmUBGa88E8CHFX6tx1ohzxs2xUw349cyrsJoena8QVKt9U"
 			]
 		},
 		"scripty.sol/contracts/scripty/core/ScriptyCore.sol": {
