@@ -1,12 +1,13 @@
 import "@typechain/hardhat"
 import "@nomiclabs/hardhat-waffle"
-import "@nomiclabs/hardhat-etherscan"
+// import "@nomiclabs/hardhat-etherscan"
 import "@nomiclabs/hardhat-ethers"
 import "hardhat-gas-reporter"
 import "dotenv/config"
 import "solidity-coverage"
 import "hardhat-deploy"
 import { HardhatUserConfig } from "hardhat/config"
+import "@nomicfoundation/hardhat-verify"
 
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || ""
 // const SEPOLIA_RPC_URL =
@@ -62,7 +63,16 @@ const config: HardhatUserConfig = {
     },
   },
   etherscan: {
-    apiKey: ETHERSCAN_API_KEY,
+    apiKey: {
+      polygonMumbai: ETHERSCAN_API_KEY,
+    },
+  },
+  sourcify: {
+    enabled: true,
+    // Optional: specify a different Sourcify server
+    apiUrl: "https://sourcify.dev/server",
+    // Optional: specify a different Sourcify repository
+    browserUrl: "https://repo.sourcify.dev",
   },
   gasReporter: {
     enabled: true,

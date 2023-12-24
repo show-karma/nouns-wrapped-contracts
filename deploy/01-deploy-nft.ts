@@ -13,7 +13,8 @@ const deployNFT: DeployFunction = async function (hre: HardhatRuntimeEnvironment
   const NFT = await deploy("NounsWrapped", {
     from: deployer,
     args: [
-      "0x0cfecb5D359E6C59ABd1d2Aa794F52C15055f451", // Owner
+      // Owner
+      deployer,
       // Mint Fee (0.001 ETH)
       1000000000000000,
     ],
@@ -24,7 +25,8 @@ const deployNFT: DeployFunction = async function (hre: HardhatRuntimeEnvironment
   log(`NFT at ${NFT.address}`)
   if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
     await verify(NFT.address, [
-      "0x0cfecb5D359E6C59ABd1d2Aa794F52C15055f451", // Owner
+      // Owner
+      deployer,
       // Mint Fee (0.001 ETH)
       1000000000000000,
     ])
