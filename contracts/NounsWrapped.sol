@@ -26,16 +26,19 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
 
     // /// @notice EIP-712 typehash for `Mint` message
     // bytes32 internal constant MINT_TYPEHASH = keccak256(
-    //     "Mint(address to,uint256 uid,uint24 mins,uint16 streak,string username)"
+    //     "Mint(address to,uint256 tokenId,uint24 mins,uint16 streak,string username)"
     // );
 
     /// @notice Fee in wei per mint
     uint256 public immutable mintFee;
 
+    /// @notice Last minted token ID
+    uint256 public tokenIdCounter;
+
     // /// @notice Address authorized to sign `Mint` messages
     // address public signer;
 
-    /// @notice Stats for a given UID
+    /// @notice Stats for a given tokenId
     /// @param props Number of props created
     /// @param sponsoredProps Number of props sponsored
     /// @param votes Number of votes cast
@@ -47,11 +50,16 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
         string username;
     }
 
-    /// @notice Read stats by uid
-    mapping(uint256 uid => WrappedStats) public statsOf;
+    /// @notice Read stats by tokenId
+    mapping(uint256 tokenId => WrappedStats) public statsOf;
 
-    /// @notice Random seed by uid
-    mapping(uint256 uid => uint32 seed) public seeds;
+    /// @notice Random seed by tokenId
+    mapping(uint256 tokenId => uint32 seed) public seeds;
+
+    /// @notice tokenId by owner
+    mapping(address => uint256) public tokenIdOf;
+
+
 
     /// @notice Set owner, signer, and mint fee
     /// @param _owner Contract owner address
@@ -63,6 +71,7 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
         uint256 _mintFee
     ) {
         mintFee = _mintFee;
+        tokenIdCounter = 0;
         _initializeOwner(_owner);
         // emit SetSigner(address(0), signer = _signer);
     }
@@ -84,17 +93,17 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
     }
 
     /// @notice Read token metadata
-    /// @param uid Token/Nouns ID
+    /// @param tokenId Token/Nouns ID
     /// @return Base64 encoded metadata data URI
-    function tokenURI(uint256 uid)
+    function tokenURI(uint256 tokenId)
         public
         view
         override
         returns (string memory)
     {
-        WrappedStats memory stats = statsOf[uid];
+        WrappedStats memory stats = statsOf[tokenId];
         return renderer.tokenJSON(
-            seeds[uid], uid, stats.props, stats.sponsoredProps, stats.votes, stats.username
+            seeds[tokenId], tokenId, stats.props, stats.sponsoredProps, stats.votes, stats.username
         ).toDataURI("application/json");
     }
 
@@ -102,18 +111,22 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
     ///         Caller must send mintFee wei as msg.value.
     ///         Caller must provide an EIP-712 `Mint` signature.
     function mint(
-        address to,
-        uint256 uid,
+        address to, 
         // bytes calldata sig
         WrappedStats calldata stats
     ) external payable {
         if (msg.value != mintFee) revert InvalidPayment();
+        // Revert if user already has a token
+        require(tokenIdOf[to] == 0, "NounsWrapped: user already has a token");
         // if (!_verifySignature(to, uid, stats, sig)) {
         //     revert InvalidSignature();
         // }
-        statsOf[uid] = stats;
-        seeds[uid] = _seed(uid);
-        _mint(to, uid);
+        tokenIdCounter++;
+        uint256 _tokenId = tokenIdCounter;
+        statsOf[_tokenId] = stats;
+        seeds[_tokenId] = _seed(_tokenId); 
+        _mint(to, _tokenId); 
+        tokenIdOf[to] = _tokenId;
     }
 
     // /// @notice Set signer address. Only callable by owner.
@@ -128,12 +141,12 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
     }
 
     /// @dev Generate token PRNG seed.
-    function _seed(uint256 uid) internal view returns (uint32) {
+    function _seed(uint256 tokenId) internal view returns (uint32) {
         return uint32(
             uint256(
                 keccak256(
                     abi.encodePacked(
-                        block.timestamp, blockhash(block.number - 1), uid
+                        block.timestamp, blockhash(block.number - 1), tokenId
                     )
                 )
             )
@@ -150,10 +163,20 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
         return ("Nouns Wrapped 2023", "1");
     }
 
+    // Burn
+    function burn(uint256 tokenId) external {
+        // Revert if user is not owner of contract or the token
+        require(msg.sender == owner() || tokenIdOf[msg.sender] == tokenId, "NounsWrapped: user is not owner of contract or the token");
+        _burn(tokenId);
+        delete statsOf[tokenId];
+        delete seeds[tokenId];
+        delete tokenIdOf[msg.sender];
+    }
+
     // /// @dev Verify EIP-712 `Mint` signature.
     // function _verifySignature(
     //     address to,
-    //     uint256 uid,
+    //     uint256 tokenId,
     //     WrappedStats calldata stats,
     //     bytes calldata sig
     // ) internal view returns (bool) {
@@ -162,7 +185,7 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
     //             abi.encode(
     //                 MINT_TYPEHASH,
     //                 to,
-    //                 uid,
+    //                 tokenId,
     //                 stats.mins,
     //                 stats.streak,
     //                 keccak256(bytes(stats.username))

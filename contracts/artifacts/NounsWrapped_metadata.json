@@ -244,6 +244,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "cancelOwnershipHandover",
 				"outputs": [],
@@ -368,11 +381,6 @@
 						"internalType": "address",
 						"name": "to",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "uid",
-						"type": "uint256"
 					},
 					{
 						"components": [
@@ -566,7 +574,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "uid",
+						"name": "tokenId",
 						"type": "uint256"
 					}
 				],
@@ -603,7 +611,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "uid",
+						"name": "tokenId",
 						"type": "uint256"
 					}
 				],
@@ -666,10 +674,42 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "tokenIdCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "tokenIdOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "uid",
+						"name": "tokenId",
 						"type": "uint256"
 					}
 				],
@@ -879,7 +919,7 @@
 				},
 				"tokenURI(uint256)": {
 					"params": {
-						"uid": "Token/Nouns ID"
+						"tokenId": "Token/Nouns ID"
 					},
 					"returns": {
 						"_0": "Base64 encoded metadata data URI"
@@ -907,7 +947,7 @@
 				"contractURI()": {
 					"notice": "Read contract metadata"
 				},
-				"mint(address,uint256,(uint16,uint16,uint24,string))": {
+				"mint(address,(uint16,uint16,uint24,string))": {
 					"notice": "Mint a Nouns Wrapped token.         Caller must send mintFee wei as msg.value.         Caller must provide an EIP-712 `Mint` signature."
 				},
 				"mintFee()": {
@@ -917,13 +957,19 @@
 					"notice": "Read token name"
 				},
 				"seeds(uint256)": {
-					"notice": "Random seed by uid"
+					"notice": "Random seed by tokenId"
 				},
 				"statsOf(uint256)": {
-					"notice": "Read stats by uid"
+					"notice": "Read stats by tokenId"
 				},
 				"symbol()": {
 					"notice": "Read token symbol"
+				},
+				"tokenIdCounter()": {
+					"notice": "Last minted token ID"
+				},
+				"tokenIdOf(address)": {
+					"notice": "tokenId by owner"
 				},
 				"tokenURI(uint256)": {
 					"notice": "Read token metadata"
@@ -960,11 +1006,11 @@
 			]
 		},
 		"contracts/NounsWrapped.sol": {
-			"keccak256": "0x35341434ec858fa992c1a50fe3743801fa538d80def4acccace67d7bd36e4a99",
+			"keccak256": "0xe446610dfa6b58b22a8bb4d397b8e77214085d62c72176ad23ada0dddddeba0b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e52a3fa1e7d10d15a34f2932b16da02f217be80e734bc413a514fbee42f29649",
-				"dweb:/ipfs/QmS3KzMhRh5RVgSpp1y6bZgvhweyK1ba2qJKGQNdq1hQFy"
+				"bzz-raw://985e082296e29e298227edee33786ad5f1f7f8ffebf27cb0fd83becaeabe2652",
+				"dweb:/ipfs/QmbBs7HxSELjNmdxMu29mT52Jek4cbHgmimMBGBfeHL3wT"
 			]
 		},
 		"contracts/Renderer.sol": {
