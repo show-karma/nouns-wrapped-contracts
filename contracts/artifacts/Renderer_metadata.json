@@ -1,0 +1,1395 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "BODY_OPEN_RAW",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "BODY_OPEN_URL_SAFE",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "BODY_RAW_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "BODY_SAFE_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DATA_HTML_BASE64_URI_RAW",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DATA_HTML_URL_SAFE",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HEAD_CLOSE_RAW",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HEAD_CLOSE_URL_SAFE",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HEAD_OPEN_RAW",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HEAD_OPEN_URL_SAFE",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HEAD_RAW_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HEAD_URL_SAFE_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HTML_BASE64_DATA_URI_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HTML_BODY_CLOSED_RAW",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HTML_BODY_CLOSED_URL_SAFE",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HTML_OPEN_RAW",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HTML_OPEN_URL_SAFE",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HTML_RAW_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HTML_URL_SAFE_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RAW_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "URLS_RAW_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "URLS_SAFE_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "URL_SAFE_BYTES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "contractJSON",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "contractAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "contractData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "enum HTMLTagType",
+								"name": "tagType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagOpen",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagClose",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagContent",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct HTMLTag",
+						"name": "htmlTag",
+						"type": "tuple"
+					}
+				],
+				"name": "fetchTagContent",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "contractAddress",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "contractData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "enum HTMLTagType",
+										"name": "tagType",
+										"type": "uint8"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagOpen",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagClose",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagContent",
+										"type": "bytes"
+									}
+								],
+								"internalType": "struct HTMLTag[]",
+								"name": "headTags",
+								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "contractAddress",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "contractData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "enum HTMLTagType",
+										"name": "tagType",
+										"type": "uint8"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagOpen",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagClose",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagContent",
+										"type": "bytes"
+									}
+								],
+								"internalType": "struct HTMLTag[]",
+								"name": "bodyTags",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct HTMLRequest",
+						"name": "htmlRequest",
+						"type": "tuple"
+					}
+				],
+				"name": "getEncodedHTML",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "contractAddress",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "contractData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "enum HTMLTagType",
+										"name": "tagType",
+										"type": "uint8"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagOpen",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagClose",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagContent",
+										"type": "bytes"
+									}
+								],
+								"internalType": "struct HTMLTag[]",
+								"name": "headTags",
+								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "contractAddress",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "contractData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "enum HTMLTagType",
+										"name": "tagType",
+										"type": "uint8"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagOpen",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagClose",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagContent",
+										"type": "bytes"
+									}
+								],
+								"internalType": "struct HTMLTag[]",
+								"name": "bodyTags",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct HTMLRequest",
+						"name": "htmlRequest",
+						"type": "tuple"
+					}
+				],
+				"name": "getEncodedHTMLString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "contractAddress",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "contractData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "enum HTMLTagType",
+										"name": "tagType",
+										"type": "uint8"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagOpen",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagClose",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagContent",
+										"type": "bytes"
+									}
+								],
+								"internalType": "struct HTMLTag[]",
+								"name": "headTags",
+								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "contractAddress",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "contractData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "enum HTMLTagType",
+										"name": "tagType",
+										"type": "uint8"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagOpen",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagClose",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagContent",
+										"type": "bytes"
+									}
+								],
+								"internalType": "struct HTMLTag[]",
+								"name": "bodyTags",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct HTMLRequest",
+						"name": "htmlRequest",
+						"type": "tuple"
+					}
+				],
+				"name": "getHTML",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "contractAddress",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "contractData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "enum HTMLTagType",
+										"name": "tagType",
+										"type": "uint8"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagOpen",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagClose",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagContent",
+										"type": "bytes"
+									}
+								],
+								"internalType": "struct HTMLTag[]",
+								"name": "headTags",
+								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "address",
+										"name": "contractAddress",
+										"type": "address"
+									},
+									{
+										"internalType": "bytes",
+										"name": "contractData",
+										"type": "bytes"
+									},
+									{
+										"internalType": "enum HTMLTagType",
+										"name": "tagType",
+										"type": "uint8"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagOpen",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagClose",
+										"type": "bytes"
+									},
+									{
+										"internalType": "bytes",
+										"name": "tagContent",
+										"type": "bytes"
+									}
+								],
+								"internalType": "struct HTMLTag[]",
+								"name": "bodyTags",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct HTMLRequest",
+						"name": "htmlRequest",
+						"type": "tuple"
+					}
+				],
+				"name": "getHTMLString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "seed",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint16",
+						"name": "props",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "sponsoredProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "votes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					}
+				],
+				"name": "htmlRequest",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "contractAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "contractData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "enum HTMLTagType",
+								"name": "tagType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagOpen",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagClose",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagContent",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct HTMLTag[]",
+						"name": "",
+						"type": "tuple[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "contractAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "contractData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "enum HTMLTagType",
+								"name": "tagType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagOpen",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagClose",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagContent",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct HTMLTag[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "seed",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint16",
+						"name": "props",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "sponsoredProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "votes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					}
+				],
+				"name": "htmlURI",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "sizeForBase64Encoding",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "seed",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint16",
+						"name": "props",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "sponsoredProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "votes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					}
+				],
+				"name": "svgURI",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "contractAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "contractData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "enum HTMLTagType",
+								"name": "tagType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagOpen",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagClose",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagContent",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct HTMLTag",
+						"name": "htmlTag",
+						"type": "tuple"
+					}
+				],
+				"name": "tagOpenCloseForHTMLTag",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "contractAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "contractData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "enum HTMLTagType",
+								"name": "tagType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagOpen",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagClose",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "tagContent",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct HTMLTag",
+						"name": "htmlTag",
+						"type": "tuple"
+					}
+				],
+				"name": "tagOpenCloseForHTMLTagURLSafe",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "seed",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "uid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "props",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "sponsoredProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "votes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					}
+				],
+				"name": "tokenJSON",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"fetchTagContent((string,address,bytes,uint8,bytes,bytes,bytes))": {
+					"details": "If given HTMLTag contains non empty tagContent      this method will return tagContent. Otherwise,       method will fetch it from the given storage       contract",
+					"params": {
+						"htmlTag": "- HTMLTag"
+					}
+				},
+				"getEncodedHTML(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
+					"params": {
+						"htmlRequest": "- HTMLRequest"
+					},
+					"returns": {
+						"_0": "Full HTML with head and body tags, base64 encoded"
+					}
+				},
+				"getEncodedHTMLString(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
+					"params": {
+						"htmlRequest": "- HTMLRequest"
+					},
+					"returns": {
+						"_0": "{getEncodedHTML} as a string"
+					}
+				},
+				"getHTML(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
+					"details": "Your HTML is returned in the following format:      <html>          <head>              [tagOpen[0]][contractRequest[0] | tagContent[0]][tagClose[0]]              [tagOpen[1]][contractRequest[0] | tagContent[1]][tagClose[1]]              ...              [tagOpen[n]][contractRequest[0] | tagContent[n]][tagClose[n]]          </head>          <body>              [tagOpen[0]][contractRequest[0] | tagContent[0]][tagClose[0]]              [tagOpen[1]][contractRequest[0] | tagContent[1]][tagClose[1]]              ...              [tagOpen[n]][contractRequest[0] | tagContent[n]][tagClose[n]]          </body>      </html>",
+					"params": {
+						"htmlRequest": "- HTMLRequest"
+					},
+					"returns": {
+						"_0": "Full HTML with head and body tags"
+					}
+				},
+				"getHTMLString(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
+					"params": {
+						"htmlRequest": "- HTMLRequest"
+					},
+					"returns": {
+						"_0": "{getHTMLWrapped} as a string"
+					}
+				},
+				"sizeForBase64Encoding(uint256)": {
+					"params": {
+						"value": "- Starting buffer size"
+					},
+					"returns": {
+						"_0": "Final buffer size as uint256"
+					}
+				},
+				"tagOpenCloseForHTMLTag((string,address,bytes,uint8,bytes,bytes,bytes))": {
+					"details": "tagType: 0/HTMLTagType.useTagOpenAndClose or any other:          [tagOpen][CONTENT][tagClose]      tagType: 1/HTMLTagType.script:          <script>[SCRIPT]</script>      tagType: 2/HTMLTagType.scriptBase64DataURI:          <script src=\"data:text/javascript;base64,[SCRIPT]\"></script>      tagType: 3/HTMLTagType.scriptGZIPBase64DataURI:          <script type=\"text/javascript+gzip\" src=\"data:text/javascript;base64,[SCRIPT]\"></script>      tagType: 4/HTMLTagType.scriptPNGBase64DataURI          <script type=\"text/javascript+png\" name=\"[NAME]\" src=\"data:text/javascript;base64,[SCRIPT]\"></script>      [IMPORTANT NOTE]: The tags `text/javascript+gzip` and `text/javascript+png` are used to identify scripts      during decompression",
+					"params": {
+						"htmlTag": "- HTMLTag data for code"
+					},
+					"returns": {
+						"_0": "(tagOpen, tagClose) - Tag open and close as a tuple"
+					}
+				},
+				"tagOpenCloseForHTMLTagURLSafe((string,address,bytes,uint8,bytes,bytes,bytes))": {
+					"details": "tagType: 0/HTMLTagType.useTagOpenAndClose or any other:          [tagOpen][scriptContent or scriptFromContract][tagClose]      tagType: 1/HTMLTagType.script:      tagType: 2/HTMLTagType.scriptBase64DataURI:          <script src=\"data:text/javascript;base64,[SCRIPT]\"></script>      tagType: 3/HTMLTagType.scriptGZIPBase64DataURI:          <script type=\"text/javascript+gzip\" src=\"data:text/javascript;base64,[SCRIPT]\"></script>      tagType: 4/HTMLTagType.scriptPNGBase64DataURI          <script type=\"text/javascript+png\" name=\"[NAME]\" src=\"data:text/javascript;base64,[SCRIPT]\"></script>      [IMPORTANT NOTE]: The tags `text/javascript+gzip` and `text/javascript+png` are used to identify scripts      during decompression",
+					"params": {
+						"htmlTag": "- HTMLTag data for code"
+					},
+					"returns": {
+						"_0": "(tagOpen, tagClose) - Tag open and close as a tuple"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"contractJSON()": {
+					"notice": "Read contract metadata JSON"
+				},
+				"fetchTagContent((string,address,bytes,uint8,bytes,bytes,bytes))": {
+					"notice": "Grabs requested tag content from storage"
+				},
+				"getEncodedHTML(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
+					"notice": "Get {getHTML} and base64 encode it"
+				},
+				"getEncodedHTMLString(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
+					"notice": "Convert {getEncodedHTML} output to a string"
+				},
+				"getHTML(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
+					"notice": "Get HTML with requested head tags and body tags"
+				},
+				"getHTMLString(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
+					"notice": "Convert {getHTML} output to a string"
+				},
+				"htmlURI(uint32,uint16,uint16,uint24,string)": {
+					"notice": "Read encoded token HTML"
+				},
+				"sizeForBase64Encoding(uint256)": {
+					"notice": "Calculate the buffer size post base64 encoding"
+				},
+				"tagOpenCloseForHTMLTag((string,address,bytes,uint8,bytes,bytes,bytes))": {
+					"notice": "Grab tag open and close depending on tag type"
+				},
+				"tagOpenCloseForHTMLTagURLSafe((string,address,bytes,uint8,bytes,bytes,bytes))": {
+					"notice": "Grab URL safe tag open and close depending on tag type"
+				},
+				"tokenJSON(uint32,uint256,uint16,uint16,uint24,string)": {
+					"notice": "Read token metadata JSON"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Renderer.sol": "Renderer"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LibDataURI.sol": {
+			"keccak256": "0xd4ce36e8355dbca03e716b41509c6762955d5dc682ca8a4e0ef0fce20b89efb2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://14dd885043ec575acf025f9bd4ec6b02c1c7dbe6fed8dbbf925ec296cba23018",
+				"dweb:/ipfs/QmexDC7v29WATTzvjEujov92DWEXDFGYG4x12jFa6qXZ92"
+			]
+		},
+		"contracts/Renderer.sol": {
+			"keccak256": "0xd8b211f93ca6a56bc10e7d9948ee7b2b3f028a2317b30a463f47dab627e814f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f2731fa8d90961d91169d3979ff7e1d6b5dd2f5b6d980dc243a3c45f3898ab27",
+				"dweb:/ipfs/QmdRCLo6Dizvhfn73SLA2r3Uo1kFGVw7prVerL7T9dUzS3"
+			]
+		},
+		"scripty.sol/contracts/scripty/core/ScriptyCore.sol": {
+			"keccak256": "0xecd301fc756876714a7d389d40b31dfbb634b9e07576378db78c81c203b09b59",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e1f05f8e9e5d043ac6bb49649a1f25afaa99d1b54928193c3000b7f97930d17a",
+				"dweb:/ipfs/Qme8oKQdV6QtnoHNgRmXzivKp7UNaqEx6FHM9GVqSNnAuF"
+			]
+		},
+		"scripty.sol/contracts/scripty/core/ScriptyStructs.sol": {
+			"keccak256": "0x9b8d49328c8b0c4fee1a4b8e1fd21d60d21a380524a9a6f80bbefc83551d5eb5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ed1792f88ed5a5425ce23481dc821ece3540a84da6783eea4b1b0aa4cb84c545",
+				"dweb:/ipfs/Qmbsu6tErQAttw68BsJweXYWUJ4ah1mxTTduttEYAG9Hn5"
+			]
+		},
+		"scripty.sol/contracts/scripty/htmlBuilders/ScriptyHTML.sol": {
+			"keccak256": "0x036640a585bc4df83c1121d54532a7fa356e94bb549f915add3f7cca8ef75f2e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://804bcdc5115113fd4a1b1db577ceea835199d87e577898383f4b53403c49b4cd",
+				"dweb:/ipfs/QmYtArTwDAuLsdgxrkZ4HPfmLPKiiXfk3b3WAnTvpNvk8M"
+			]
+		},
+		"scripty.sol/contracts/scripty/interfaces/IContractScript.sol": {
+			"keccak256": "0x434775e385d70a035152e6eb297b6879d9ef3ad892907f06e56e4360b9ff9317",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aea35aa6450da710a974ee3894efbb4dec47183c519733b73a67558c16b7873f",
+				"dweb:/ipfs/QmTPuMEbPBw2wvSaauhZUSYCv5r25gByRMR2jL2Xgq3wyh"
+			]
+		},
+		"scripty.sol/contracts/scripty/interfaces/IScriptyHTML.sol": {
+			"keccak256": "0x850899e6606fbb6bdbe9b85362e9cbbb97b27329dc121fffbda8f081f630fbf5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://20e9b640c0fce9eb1668afe1ea3397c0befd3086a99204849101aaca73f7e010",
+				"dweb:/ipfs/QmZGKjmCfHCC1pWmjmE3zSds2e2DjGDy9maAHX2mUV4EKW"
+			]
+		},
+		"scripty.sol/contracts/scripty/interfaces/IScriptyStorage.sol": {
+			"keccak256": "0x5c43832e2c04c250664df7231c0c90d3b0f74e906bc7d26323222290e7d53a2f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ae24a053a6235e3c038c38569cebe77cae5603866eb805f91a7dff62d52b177d",
+				"dweb:/ipfs/QmZ1p3fav8YB1x3WBsf39dBqqieFoRDUmThq9kc89rnXLy"
+			]
+		},
+		"scripty.sol/contracts/scripty/utils/DynamicBuffer.sol": {
+			"keccak256": "0xbe4f1ebd86c807f73ee48a5856e54d2e270a7bbcfb16fbc8f6400e0f626e96fb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7a719954797242a090584839520b8cc698dfc813ac3ea95aca46d2b7898cf18a",
+				"dweb:/ipfs/QmXRjsssKXjzkiMCpMraeb2jreQieCXCxP82KjAfPgB3fA"
+			]
+		},
+		"solady/src/utils/Base64.sol": {
+			"keccak256": "0xb277952f747b4d4b096b94d5ff9aa540a87af1cac16088dd0440b42612a189bb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2a2d4797d508a3c6bf3f9cf042e710a6b199c6a0e43eaeb8fb96940b858aba66",
+				"dweb:/ipfs/Qmc8nFGukCkdw4VWgTvLjUBxtKeHTRauVAHUgmd4qyKz7L"
+			]
+		},
+		"solady/src/utils/LibString.sol": {
+			"keccak256": "0x74ec81acbea6db4afe149ab51e26961bcb801af42f7af98242be71b866066200",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://16bb49824fcfa9667aeed0eb515fdefda1016225085cf78ed852078c67168229",
+				"dweb:/ipfs/QmZ59xrx5QLSx5N5CiTLrfwsPKR7kpK4RRpiEWSMEpvDzQ"
+			]
+		}
+	},
+	"version": 1
+}

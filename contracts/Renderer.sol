@@ -150,7 +150,7 @@ contract Renderer is ScriptyHTML {
     /// @notice Read contract metadata JSON
     function contractJSON() public pure returns (string memory) {
         return
-        "{\"name\":\"Nouns Wrapped 2023\",\"image\":\"ipfs://bafybeibesesfccddtczatb6t4pt6q6qzgvuag36tkyelmnstagktnrrfti\",\"description\":\"A commemorative NFT for all the people involved in proliferating the Nouns protocol in 2023\"}";
+        "{\"name\":\"Nouns Wrapped 2023\",\"image\":\"ipfs://bafybeifd3tynb3ue4wtfwiq76vuxt3u5x2mzrytsco5iyzcvfx54cl4kwa\",\"description\":\"A commemorative NFT for all the people involved in proliferating the Nouns DAO in 2023\"}";
     }
 
     function _color(uint32 seed) internal pure returns (bytes memory) {
