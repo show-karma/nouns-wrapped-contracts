@@ -120,7 +120,7 @@ contract Renderer is ScriptyHTML {
     /// @notice Read token metadata JSON
     function tokenJSON(
         uint32 seed,
-        uint256 uid,
+        uint256 tokenId,
         uint16 props,
         uint16 sponsoredProps,
         uint24 votes,
@@ -128,21 +128,21 @@ contract Renderer is ScriptyHTML {
     ) public view returns (string memory) {
         return string(
             abi.encodePacked(
-                "{\"animation_url\":\"",
+                '{"animation_url":"',
                 htmlURI(seed, props, sponsoredProps, votes, username),
-                "\",\"image\":\"",
-                svgURI(seed,props, sponsoredProps, votes, username),
-                "\",\"name\":\"ID #",
-                uid.toString(),
-                "\",\"attributes\":[{\"trait_type\":\"Props Created\",\"value\":",
+                '", "image":"',
+                svgURI(seed, props, sponsoredProps, votes, username),
+                '", "name": "ID #',
+                tokenId.toString(),
+                '", "attributes":[{"trait_type": "Props Created", "value":',
                 uint256(props).toString(),
-                "},{\"trait_type\":\"Props Sponsored\",\"value\":",
+                '},{"trait_type": "Props Sponsored", "value":',
                 uint256(sponsoredProps).toString(),
-                "},{\"trait_type\":\"Username\",\"value\":",
-                username,
-                "},{\"trait_type\":\"Votes Cast\",\"value\":\"",
+                '},{"trait_type": "Votes Cast","value":',
                 uint256(votes).toString(),
-                "\"}]}"
+                '},{"trait_type": "Username","value":"',
+                username,
+                '"}]}'
             )
         );
     }
@@ -150,7 +150,7 @@ contract Renderer is ScriptyHTML {
     /// @notice Read contract metadata JSON
     function contractJSON() public pure returns (string memory) {
         return
-        "{\"name\":\"Nouns Wrapped 2023\",\"image\":\"ipfs://bafybeifd3tynb3ue4wtfwiq76vuxt3u5x2mzrytsco5iyzcvfx54cl4kwa\",\"description\":\"A commemorative NFT for all the people involved in proliferating the Nouns DAO in 2023\"}";
+        '{"name":"Nouns Wrapped 2023","image":"ipfs://bafybeifd3tynb3ue4wtfwiq76vuxt3u5x2mzrytsco5iyzcvfx54cl4kwa","description":"A commemorative NFT for all the people involved in proliferating the Nouns DAO in 2023"}';
     }
 
     function _color(uint32 seed) internal pure returns (bytes memory) {

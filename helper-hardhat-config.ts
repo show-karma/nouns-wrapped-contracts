@@ -15,7 +15,7 @@ export const networkConfig: networkConfigInfo = {
   },
 }
 
-export const developmentChains = ["hardhat", "localhost", "mumbai", "base", "baseGoerli"]
+export const developmentChains = ["hardhat", "localhost"]
 export const proposalsFile = "proposals.json"
 
 // Governor Values

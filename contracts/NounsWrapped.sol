@@ -118,7 +118,7 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
         if (msg.value != mintFee) revert InvalidPayment();
         // Revert if user already has a token
         require(tokenIdOf[to] == 0, "NounsWrapped: user already has a token");
-        // if (!_verifySignature(to, uid, stats, sig)) {
+        // if (!_verifySignature(to, tokenId, stats, sig)) {
         //     revert InvalidSignature();
         // }
         tokenIdCounter++;

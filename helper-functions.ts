@@ -1,9 +1,10 @@
 import { run } from "hardhat"
 
-const verify = async (contractAddress: string, args: any[]) => {
+const verify = async (contractAddress: string, network: string = "mumbai", args: any[]) => {
   console.log("Verifying contract...")
   try {
     await run("verify:verify", {
+      network: network,
       address: contractAddress,
       constructorArguments: args,
     })

@@ -14,15 +14,15 @@ describe("NounsWrapped Mint Flow", () => {
 
   it("Mint NFT", async () => {
     const toAddress = "0x0cfecb5D359E6C59ABd1d2Aa794F52C15055f451"
-    const uid = 8754462663
     const stats = {
-      mins: 11,
-      streak: 110,
-      username: "super.skywalker",
+      props: 120,
+      sponsoredProps: 120,
+      votes: 400,
+      username: "superskywalker",
     }
     const value = parseEther("0.001")
 
-    const res0 = await nounsWrapped.mint(toAddress, uid, stats, { value })
+    const res0 = await nounsWrapped.mint(toAddress, stats, { value })
     const tx0 = await res0.wait(1)
     const tokenId = tx0.events![0].args!.tokenId
     console.log("tokenId", tokenId.toString())
@@ -32,7 +32,7 @@ describe("NounsWrapped Mint Flow", () => {
     assert.isAbove(tokenId.toNumber(), 0, "Token ID should be greater than 0")
 
     // Test minting with different values
-    const res1 = await nounsWrapped.mint(toAddress, uid + 1, stats, { value })
+    const res1 = await nounsWrapped.mint(toAddress, stats, { value })
     const tx1 = await res1.wait(1)
     const tokenId1 = tx1.events![0].args!.tokenId
     console.log("tokenId1", tokenId1.toString())
@@ -40,7 +40,7 @@ describe("NounsWrapped Mint Flow", () => {
 
     // Test minting with different addresses
     const toAddress2 = "0x1234567890123456789012345678901234567890"
-    const res2 = await nounsWrapped.mint(toAddress2, uid, stats, { value })
+    const res2 = await nounsWrapped.mint(toAddress2, stats, { value })
     const tx2 = await res2.wait(1)
     const tokenId2 = tx2.events![0].args!.tokenId
     console.log("tokenId2", tokenId2.toString())
@@ -48,11 +48,12 @@ describe("NounsWrapped Mint Flow", () => {
 
     // Test minting with different props
     const stats2 = {
-      mins: 10,
-      streak: 100,
+      props: 121,
+      sponsoredProps: 121,
+      votes: 401,
       username: "test.user",
     }
-    const res3 = await nounsWrapped.mint(toAddress, uid, stats2, { value })
+    const res3 = await nounsWrapped.mint(toAddress, stats2, { value })
     const tx3 = await res3.wait(1)
     const tokenId3 = tx3.events![0].args!.tokenId
     console.log("tokenId3", tokenId3.toString())

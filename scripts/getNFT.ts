@@ -11,7 +11,7 @@ export async function main(args: any[]) {
 }
 
 main([
-  54255, // uid
+  54255, // tokenId
 ])
   .then(() => process.exit(0))
   .catch((error) => {

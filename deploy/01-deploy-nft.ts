@@ -1,6 +1,7 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types"
 import { DeployFunction } from "hardhat-deploy/types"
 import verify from "../helper-functions"
+import { parseEther } from "ethers/lib/utils"
 import { networkConfig, developmentChains } from "../helper-hardhat-config"
 
 const deployNFT: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
@@ -15,8 +16,8 @@ const deployNFT: DeployFunction = async function (hre: HardhatRuntimeEnvironment
     args: [
       // Owner
       deployer,
-      // Mint Fee (0.001 ETH)
-      1000000000000000,
+      // Mint Fee
+      parseEther("0.0001"), // Wei 100000000000000
     ],
     log: true,
     // we need to wait if on a live network so we can verify properly
@@ -24,11 +25,15 @@ const deployNFT: DeployFunction = async function (hre: HardhatRuntimeEnvironment
   })
   log(`NFT at ${NFT.address}`)
   if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
-    await verify(NFT.address, [
+    // Wait for 5 block confirmations
+    log("Waiting for 5 block confirmations before verifying...")
+    await hre.ethers.provider.waitForTransaction(NFT.transactionHash || "", 5)
+
+    await verify(NFT.address, network.name, [
       // Owner
       deployer,
-      // Mint Fee (0.001 ETH)
-      1000000000000000,
+      // Mint Fee
+      parseEther("0.0001"), // Wei 100000000000000
     ])
   }
 }
