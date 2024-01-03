@@ -816,6 +816,21 @@
 						"type": "uint24"
 					},
 					{
+						"internalType": "uint24",
+						"name": "propHouseVotes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint16",
+						"name": "candProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "propsFeedback",
+						"type": "uint24"
+					},
+					{
 						"internalType": "string",
 						"name": "username",
 						"type": "string"
@@ -934,6 +949,21 @@
 						"type": "uint24"
 					},
 					{
+						"internalType": "uint24",
+						"name": "propHouseVotes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint16",
+						"name": "candProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "propsFeedback",
+						"type": "uint24"
+					},
+					{
 						"internalType": "string",
 						"name": "username",
 						"type": "string"
@@ -989,6 +1019,21 @@
 					{
 						"internalType": "uint24",
 						"name": "votes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint24",
+						"name": "propHouseVotes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint16",
+						"name": "candProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "propsFeedback",
 						"type": "uint24"
 					},
 					{
@@ -1139,7 +1184,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "uid",
+						"name": "tokenId",
 						"type": "uint256"
 					},
 					{
@@ -1155,6 +1200,21 @@
 					{
 						"internalType": "uint24",
 						"name": "votes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint24",
+						"name": "propHouseVotes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint16",
+						"name": "candProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "propsFeedback",
 						"type": "uint24"
 					},
 					{
@@ -1267,7 +1327,7 @@
 				"getHTMLString(((string,address,bytes,uint8,bytes,bytes,bytes)[],(string,address,bytes,uint8,bytes,bytes,bytes)[]))": {
 					"notice": "Convert {getHTML} output to a string"
 				},
-				"htmlURI(uint32,uint16,uint16,uint24,string)": {
+				"htmlURI(uint32,uint16,uint16,uint24,uint24,uint16,uint24,string)": {
 					"notice": "Read encoded token HTML"
 				},
 				"sizeForBase64Encoding(uint256)": {
@@ -1279,7 +1339,7 @@
 				"tagOpenCloseForHTMLTagURLSafe((string,address,bytes,uint8,bytes,bytes,bytes))": {
 					"notice": "Grab URL safe tag open and close depending on tag type"
 				},
-				"tokenJSON(uint32,uint256,uint16,uint16,uint24,string)": {
+				"tokenJSON(uint32,uint256,uint16,uint16,uint24,uint24,uint16,uint24,string)": {
 					"notice": "Read token metadata JSON"
 				}
 			},
@@ -1311,11 +1371,11 @@
 			]
 		},
 		"contracts/Renderer.sol": {
-			"keccak256": "0xd8b211f93ca6a56bc10e7d9948ee7b2b3f028a2317b30a463f47dab627e814f0",
+			"keccak256": "0xab8c22249d29348fb5daf576877b8f864967260a4a9c67caab40f1d3b909ac63",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f2731fa8d90961d91169d3979ff7e1d6b5dd2f5b6d980dc243a3c45f3898ab27",
-				"dweb:/ipfs/QmdRCLo6Dizvhfn73SLA2r3Uo1kFGVw7prVerL7T9dUzS3"
+				"bzz-raw://3f3cb7fe938b19af05cf24bb4151b564837e6fb353256ea96dafe1e0f6e5d926",
+				"dweb:/ipfs/Qmcbow5PsHUUfLw3VQSLJfRfXbjG8Xi54kaMns8iejs6wf"
 			]
 		},
 		"scripty.sol/contracts/scripty/core/ScriptyCore.sol": {

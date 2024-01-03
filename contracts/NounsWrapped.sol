@@ -24,13 +24,16 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
     // /// @notice emitted when owner changes the signer address
     // event SetSigner(address oldSigner, address newSigner);
 
+    /// @notice emitted when owner changes the mint fee
+    event SetMintFee(uint256 oldMintFee, uint256 newMintFee);
+
     // /// @notice EIP-712 typehash for `Mint` message
     // bytes32 internal constant MINT_TYPEHASH = keccak256(
     //     "Mint(address to,uint256 tokenId,uint24 mins,uint16 streak,string username)"
     // );
 
     /// @notice Fee in wei per mint
-    uint256 public immutable mintFee;
+    uint256 public mintFee;
 
     /// @notice Last minted token ID
     uint256 public tokenIdCounter;
@@ -47,6 +50,9 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
         uint16 props;
         uint16 sponsoredProps;
         uint24 votes; 
+        uint24 propHouseVotes;
+        uint16 candProps;
+        uint24 propsFeedback; 
         string username;
     }
 
@@ -103,7 +109,7 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
     {
         WrappedStats memory stats = statsOf[tokenId];
         return renderer.tokenJSON(
-            seeds[tokenId], tokenId, stats.props, stats.sponsoredProps, stats.votes, stats.username
+            seeds[tokenId], tokenId, stats.props, stats.sponsoredProps, stats.votes, stats.propHouseVotes, stats.candProps, stats.propsFeedback, stats.username
         ).toDataURI("application/json");
     }
 
@@ -115,7 +121,7 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
         // bytes calldata sig
         WrappedStats calldata stats
     ) external payable {
-        if (msg.value != mintFee) revert InvalidPayment();
+        require(msg.value == mintFee, "NounsWrapped: incorrect payment");
         // Revert if user already has a token
         require(tokenIdOf[to] == 0, "NounsWrapped: user already has a token");
         // if (!_verifySignature(to, tokenId, stats, sig)) {
@@ -138,6 +144,12 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
     /// @notice Withdraw contract balance. Only callable by owner.
     function withdrawBalance(address to) external onlyOwner {
         SafeTransferLib.safeTransferAllETH(to);
+    }
+
+    /// @notice Change mint fee. Only callable by owner.
+    /// @param _mintFee New mint fee
+    function setMintFee(uint256 _mintFee) external onlyOwner {
+        emit SetMintFee(mintFee, mintFee = _mintFee);
     }
 
     /// @dev Generate token PRNG seed.

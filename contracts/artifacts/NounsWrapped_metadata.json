@@ -185,6 +185,25 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "oldMintFee",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newMintFee",
+						"type": "uint256"
+					}
+				],
+				"name": "SetMintFee",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
 						"indexed": true,
 						"internalType": "address",
 						"name": "from",
@@ -400,6 +419,21 @@
 								"type": "uint24"
 							},
 							{
+								"internalType": "uint24",
+								"name": "propHouseVotes",
+								"type": "uint24"
+							},
+							{
+								"internalType": "uint16",
+								"name": "candProps",
+								"type": "uint16"
+							},
+							{
+								"internalType": "uint24",
+								"name": "propsFeedback",
+								"type": "uint24"
+							},
+							{
 								"internalType": "string",
 								"name": "username",
 								"type": "string"
@@ -611,6 +645,19 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "_mintFee",
+						"type": "uint256"
+					}
+				],
+				"name": "setMintFee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "tokenId",
 						"type": "uint256"
 					}
@@ -630,6 +677,21 @@
 					{
 						"internalType": "uint24",
 						"name": "votes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint24",
+						"name": "propHouseVotes",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint16",
+						"name": "candProps",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint24",
+						"name": "propsFeedback",
 						"type": "uint24"
 					},
 					{
@@ -914,6 +976,11 @@
 				"setApprovalForAll(address,bool)": {
 					"details": "Sets whether `operator` is approved to manage the tokens of the caller. Emits an {ApprovalForAll} event."
 				},
+				"setMintFee(uint256)": {
+					"params": {
+						"_mintFee": "New mint fee"
+					}
+				},
 				"supportsInterface(bytes4)": {
 					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See: https://eips.ethereum.org/EIPS/eip-165 This function call must use less than 30000 gas."
 				},
@@ -942,12 +1009,17 @@
 					}
 				]
 			},
+			"events": {
+				"SetMintFee(uint256,uint256)": {
+					"notice": "emitted when owner changes the mint fee"
+				}
+			},
 			"kind": "user",
 			"methods": {
 				"contractURI()": {
 					"notice": "Read contract metadata"
 				},
-				"mint(address,(uint16,uint16,uint24,string))": {
+				"mint(address,(uint16,uint16,uint24,uint24,uint16,uint24,string))": {
 					"notice": "Mint a Nouns Wrapped token.         Caller must send mintFee wei as msg.value.         Caller must provide an EIP-712 `Mint` signature."
 				},
 				"mintFee()": {
@@ -958,6 +1030,9 @@
 				},
 				"seeds(uint256)": {
 					"notice": "Random seed by tokenId"
+				},
+				"setMintFee(uint256)": {
+					"notice": "Change mint fee. Only callable by owner."
 				},
 				"statsOf(uint256)": {
 					"notice": "Read stats by tokenId"
@@ -1006,19 +1081,19 @@
 			]
 		},
 		"contracts/NounsWrapped.sol": {
-			"keccak256": "0xe446610dfa6b58b22a8bb4d397b8e77214085d62c72176ad23ada0dddddeba0b",
+			"keccak256": "0x506a073ef221ad95ec87efd21294f41a9805c9cc8cb9df2a81b0089d8215e03f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://985e082296e29e298227edee33786ad5f1f7f8ffebf27cb0fd83becaeabe2652",
-				"dweb:/ipfs/QmbBs7HxSELjNmdxMu29mT52Jek4cbHgmimMBGBfeHL3wT"
+				"bzz-raw://c419e80365a02221d3f16e3d7304d64e8dd70d5aaf02120fa8477bf21773f455",
+				"dweb:/ipfs/QmbfthbGB3evNYLVdEP798Qy95Ga5hGxdKNXKHhTxPMF1W"
 			]
 		},
 		"contracts/Renderer.sol": {
-			"keccak256": "0xd4990619390e7c16ed8480ea0a946b32a801635f68dc793a5216bf35923f9f16",
+			"keccak256": "0xe38c533d3c10dbd93c28bfe9b5e686226995dafef28a10422ac8f0b01af3eea7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d68b665ab3984737883178f4e367229fb405fef41581aca49cc4aa3268cd01da",
-				"dweb:/ipfs/QmUBGa88E8CHFX6tx1ohzxs2xUw349cyrsJoena8QVKt9U"
+				"bzz-raw://4b035b6ae589e3210ce8cbfe9cd3bc75706b34e08d0391cf053592eeedc31311",
+				"dweb:/ipfs/QmbNW6bTuQvf5U5VaqKJahyxopu95sNgX5o1UMFtNZKJJ2"
 			]
 		},
 		"scripty.sol/contracts/scripty/core/ScriptyCore.sol": {
