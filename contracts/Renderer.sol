@@ -32,7 +32,7 @@ contract Renderer is ScriptyHTML {
             "<link href=\"https://fonts.googleapis.com\" rel=\"preconnect\"/><link href=\"https://fonts.gstatic.com\" rel=\"preconnect\" crossorigin=\"true\"/><link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900\" rel=\"stylesheet\"/><link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,800\" rel=\"stylesheet\"/>";
 
         headTags[1].tagContent =
-            "<style>body{font-family:Poppins,sans-serif;margin:0;padding:0;display:flex;justify-content:center;align-items:center}#c{position:relative}#w{position:absolute;display:flex;flex-direction:column;height:100%;color:#fff;font-weight:400}.t{font-size:min(4vw,4vh)}.l{font-size:min(2.5vw,2.5vh);margin-top:5px}.s,.u{font-size:min(6.5vw,6.5vh);font-weight:600;font-family:Montserrat,sans-serif}.u{font-size:min(8vw,8vh);overflow:hidden;font-family:Montserrat,sans-serif}.g{flex-grow:1}#a{margin-top:1.5rem;margin-left:1.5rem}#z{margin-bottom:1.5rem;margin-left:1.5rem}#m{margin-bottom:calc(1rem - 8px)}.p{width:100vw;height:100vh;background-color:";
+            "<style>body{font-family:Poppins,sans-serif;margin:0;padding:0;display:flex;justify-content:center;align-items:center}#c{position:relative}#w{position:absolute;display:flex;flex-direction:column;height:100%;color:#fff;font-weight:400}.t{font-size:min(4vw,4vh)}.l{font-size:min(2.5vw,2.5vh);margin-top:5px}.s,.u{font-size:min(6.5vw,6.5vh);font-weight:600;font-family:Montserrat,sans-serif}.u{font-size:min(7vw,7vh);overflow:hidden;font-family:Montserrat,sans-serif}.g{flex-grow:1}#a{margin-top:1.5rem;margin-left:1.5rem}#z{margin-bottom:1.5rem;margin-left:1.5rem}#m{margin-bottom:calc(1rem - 8px)}.p{width:100vw;height:100vh;background-color:";
         headTags[2].tagContent = _color(seed);
         headTags[3].tagContent = "}</style>";
 
@@ -48,19 +48,19 @@ contract Renderer is ScriptyHTML {
             "\"><div id=\"w\"><div id=\"a\"><div class=\"t\">Nouns Wrapped 2023 - By NounsKarma.xyz</div><div class=\"u\">";
         bodyTags[5].tagContent = bytes(username);
         bodyTags[6].tagContent =
-            "</div></div><div class=\"g\"></div><div id=\"z\"><div class=\"l\">Votes Cast</div><div class=\"s\" id=\"m\">";
+            "</div></div><div class=\"g\"></div><div id=\"z\"><div class=\"l\">Cast on Nouns DAO</div><div class=\"s\" id=\"m\">";
         bodyTags[7].tagContent = bytes(uint256(votes).toString());
         bodyTags[8].tagContent =
-            "</div><div class=\"l\">DAO props</div><div class=\"s\">";
+            " votes</div><div class=\"l\">Created</div><div class=\"s\">";
         bodyTags[9].tagContent = bytes(uint256(props).toString());
         bodyTags[10].tagContent =
-            "</div><div class=\"l\">Candidate Props</div><div class=\"s\">";
+            " props</div><div class=\"l\">Created</div><div class=\"s\">";
         bodyTags[11].tagContent = bytes(uint256(candProps).toString());
          bodyTags[12].tagContent =
-            " props</div><div class=\"l\">PropHouse Votes</div><div class=\"s\">";
+            " cand props</div><div class=\"l\">Cast on PropHouse</div><div class=\"s\">";
         bodyTags[13].tagContent = bytes(uint256(propHouseVotes).toString());
          bodyTags[14].tagContent =
-            " votes</div><div class=\"l\">Feedbacks given</div><div class=\"s\">";
+            " votes</div><div class=\"l\">Given on props</div><div class=\"s\">";
         bodyTags[15].tagContent = bytes(uint256(propsFeedback).toString()); 
         bodyTags[16].tagContent = " feedbacks</div><div class=\"l\">Sponsored</div><div class=\"s\">";
         bodyTags[17].tagContent = bytes(uint256(sponsoredProps).toString()); 

@@ -1371,11 +1371,11 @@
 			]
 		},
 		"contracts/Renderer.sol": {
-			"keccak256": "0xab8c22249d29348fb5daf576877b8f864967260a4a9c67caab40f1d3b909ac63",
+			"keccak256": "0xa057ae970acb3ffa55fd2a33f78503ca6ad6ecb6afd49fae4fc87ab9e750c8fb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3f3cb7fe938b19af05cf24bb4151b564837e6fb353256ea96dafe1e0f6e5d926",
-				"dweb:/ipfs/Qmcbow5PsHUUfLw3VQSLJfRfXbjG8Xi54kaMns8iejs6wf"
+				"bzz-raw://cbf8ef14ee821da3bf856f678b526d0cbd584fa3ce2c86c9610e1193c6d75d1a",
+				"dweb:/ipfs/QmdiHtGdRQMzbZUitCUskYfpBULv5zDy7mmxcfrUG91uZ3"
 			]
 		},
 		"scripty.sol/contracts/scripty/core/ScriptyCore.sol": {
