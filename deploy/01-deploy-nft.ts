@@ -11,12 +11,13 @@ const deployNFT: DeployFunction = async function (hre: HardhatRuntimeEnvironment
   const { deployer } = await getNamedAccounts()
   log("----------------------------------------------------")
   log("Deploying NFT and waiting for confirmations...")
+  const owner = "0x23B7A53ecfd93803C63b97316D7362eae59C55B6"
   const mintFee = parseEther("0") // Wei 100000000000000
   const NFT = await deploy("NounsWrapped", {
     from: deployer,
     args: [
       // Owner
-      deployer,
+      owner,
       // Mint Fee
       mintFee,
     ],
@@ -32,7 +33,7 @@ const deployNFT: DeployFunction = async function (hre: HardhatRuntimeEnvironment
 
     await verify(NFT.address, network.name, [
       // Owner
-      deployer,
+      owner,
       // Mint Fee
       mintFee,
     ])

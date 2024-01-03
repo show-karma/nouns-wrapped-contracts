@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.21;
+pragma solidity 0.8.23;
 
 import {EIP712} from "solady/src/utils/EIP712.sol";
 import {ERC721} from "solady/src/tokens/ERC721.sol";
@@ -45,6 +45,9 @@ contract NounsWrapped is Ownable, ERC721, EIP712 {
     /// @param props Number of props created
     /// @param sponsoredProps Number of props sponsored
     /// @param votes Number of votes cast
+    /// @param propHouseVotes Number of votes cast in Prop House
+    /// @param candProps Number of props created as a candidate
+    /// @param propsFeedback Number of props created as feedback
     /// @param username Username of caster
     struct WrappedStats {
         uint16 props;

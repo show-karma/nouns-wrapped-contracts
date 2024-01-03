@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.21;
+pragma solidity 0.8.23;
 
 import {LibString} from "solady/src/utils/LibString.sol";
 import {ScriptyHTML} from "scripty.sol/contracts/scripty/htmlBuilders/ScriptyHTML.sol";

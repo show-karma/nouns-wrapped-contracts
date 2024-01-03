@@ -37,10 +37,10 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY || ""],
     },
     base: {
-      chainId: 8453,
       allowUnlimitedContractSize: true,
-      gas: 2100000,
-      gasPrice: 8000000000,
+      // chainId: 8453,
+      gas: "auto",
+      gasPrice: 1000000000,
       url: "https://mainnet.base.org",
       accounts: [process.env.PRIVATE_KEY || ""],
     },
@@ -54,8 +54,9 @@ const config: HardhatUserConfig = {
     },
   },
   solidity: {
-    version: "0.8.21",
+    version: "0.8.23",
     settings: {
+      evmVersion: "paris",
       optimizer: {
         enabled: true,
         runs: 200,
