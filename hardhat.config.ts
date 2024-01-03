@@ -66,6 +66,10 @@ const config: HardhatUserConfig = {
   etherscan: {
     apiKey: {
       polygonMumbai: ETHERSCAN_API_KEY,
+      polygon: ETHERSCAN_API_KEY,
+      base: ETHERSCAN_API_KEY,
+      baseGoerli: ETHERSCAN_API_KEY,
+      goerli: ETHERSCAN_API_KEY,
     },
   },
   sourcify: {
