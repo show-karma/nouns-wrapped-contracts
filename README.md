@@ -1,13 +1,12 @@
-# Nouns Wrapped
+# Nouns Wrapped Contracts
 <!-- GETTING STARTED -->
 
-# Getting Started    
+### Getting Started    
 1. Clone this repo:
 ```
 git clone https://github.com/show-karma/nouns-wrapped-contracts.git
 ``` 
-
-```
+ 
 1. Install dependencies
 ```sh
 yarn
